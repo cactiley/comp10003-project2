@@ -1,6 +1,101 @@
 /* GENERAL STYLES */
+body,
+nav,
+section,
+article,
+footer,
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #651010;
+    --color-secondary: #48565b;
+    --color-accent1: #485d55;
+    --color-accent2: #f4841a;
+}
+
+*/ html,
+body {
+    margin: 0;
+    /* font-family: ; */
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: var(--color-primary);
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    /* font-family: ; */
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40pt;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
 /* UTILITIES */
+.bold {
+    font-weight: 700;
+}
+
+.orange {
+    color: var(--color-accent2);
+}
+
 /* SITEWIDE */
+.header {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+.header h1,
+footer p {
+    color: #ffffff;
+}
+
+nav p,
+nav a {
+    color: #000000;
+}
+
+section p {
+    padding: 20px 0;
+}
+
 /* PAGE SPECIFIC - HOMEPAGE */
 /* PAGE SPECIFIC - QUIZ */
 /* PAGE SPECIFIC - EXPLANATIONS */
