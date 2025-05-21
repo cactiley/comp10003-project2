@@ -161,8 +161,8 @@ section p {
 }
 
 .banner {
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 }
 
 /* PAGE SPECIFIC - HOMEPAGE */
@@ -174,7 +174,7 @@ img.cards {
 }
 
 img.cards.large {
-    width: 500px;
+    width: 1000px;
 }
 
 .flex-container.cards {
