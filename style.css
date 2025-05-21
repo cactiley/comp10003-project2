@@ -160,6 +160,11 @@ section p {
     padding: 20px 0;
 }
 
+.banner {
+    width:100%;
+    display:block;
+}
+
 /* PAGE SPECIFIC - HOMEPAGE */
 /* PAGE SPECIFIC - CARDS */
 img.cards {
