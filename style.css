@@ -34,7 +34,7 @@ ol {
 html,
 body {
     background-color: var(--color-tertiary);
-    /* font-family: ; */
+    font-family: "Figtree", Verdana, sans-serif;
 }
 
 main {
@@ -117,13 +117,13 @@ p {
 .card h4,
 .card img {
     flex: 1 0 0;
-    padding: 10px;
+    padding: 20px;
 }
 
 .card p {
     flex: 1 0 0;
     background-color: var(--color-card-text);
-    padding: 10px;
+    padding: 20px;
 }
 
 /* other */
@@ -168,6 +168,10 @@ img.cards {
     margin: 20px 0;
 }
 
+img.cards.large {
+    width: 500px;
+}
+
 .flex-container.cards {
     padding: 20px 20px;
 }
@@ -200,6 +204,29 @@ img.cards {
 .subsection2 h3 {
     background-color: var(--color-subsection2-heading);
     padding: 10px 20px;
+}
+
+/* PAGE SPECIFIC - HISTORY */
+.timeline {
+    background-color: var(--color-subsection2-body);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+.timeline-item {
+    display: inline-block;
+}
+
+.timeline-content {
+    width: 640px;
+    white-space: normal;
+    padding: 20px;
+}
+
+.timeline-image {
+    width: 640px;
+    padding: 20px;
 }
 
 /* PAGE SPECIFIC - QUIZ */
