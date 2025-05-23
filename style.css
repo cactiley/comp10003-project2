@@ -126,6 +126,24 @@ p {
     padding: 20px;
 }
 
+.card2 {
+    grid-column: span 1;
+    background-color: var(--color-subsection2-body);
+    display: flex;
+    flex-direction: column;
+}
+
+.card2 img {
+    flex: 1 0 0;
+    padding: 20px;
+    width: 500px;
+}
+
+.card2 {
+    flex: 1 0 0;
+    padding: 20px;
+}
+
 /* other */
 .textbox-beige {
     background-color: var(--color-textbox);
