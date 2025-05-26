@@ -91,6 +91,10 @@ p {
     font-size: 16pt;
 }
 
+label,
+input {
+    display: block;
+}
 
 /* UTILITIES */
 /* containers */
@@ -162,7 +166,7 @@ p {
 /* SITEWIDE */
 .header {
     background-color: var(--color-primary);
-    padding:20px;
+    padding: 20px;
 }
 
 footer p {
