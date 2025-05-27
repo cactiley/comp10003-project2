@@ -149,7 +149,14 @@ input {
 }
 
 /* other */
-.textbox-beige {
+.textbox-beige-card {
+    background-color: var(--color-textbox);
+    margin: 20px 20px;
+    padding: 20px;
+    width: 465px;
+}
+
+.textbox-beige-subsection {
     background-color: var(--color-textbox);
     margin: 20px 20px;
     padding: 20px;
@@ -218,6 +225,11 @@ img.cards.large {
     background-color: var(--color-subsection2-body);
 }
 
+.subsection3 {
+    background-color: #c5b6b2;
+    padding: 20px;
+}
+
 .subsection-heading {
     color: #ffffff;
     text-align: center;
@@ -231,6 +243,26 @@ img.cards.large {
 .subsection2 h3 {
     background-color: var(--color-subsection2-heading);
     padding: 10px 20px;
+}
+
+.subsection3 h4 {
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap p {
+    margin: 20px;
+    padding: 20px;
+}
+
+.wrap img {
+    width: 300px;
 }
 
 /* PAGE SPECIFIC - HISTORY */
