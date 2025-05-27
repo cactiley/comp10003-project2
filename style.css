@@ -96,6 +96,10 @@ input {
     display: block;
 }
 
+a {
+    color: var(--color-primary);
+}
+
 /* UTILITIES */
 /* containers */
 .flex-container {
@@ -232,6 +236,11 @@ img.cards.large {
 
 .subsection-heading {
     color: #ffffff;
+    text-align: center;
+}
+
+.subsection-heading-lrg {
+    font-size: 30pt;
     text-align: center;
 }
 
