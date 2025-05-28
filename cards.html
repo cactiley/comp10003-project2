@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cards | Unofficial Exploding Kittens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="assets/banner.png" alt="kitten in outer space" class="banner">
+        <div class="header">
+            <h1><span class="orange">Exploding</span> Kittens</h1>
+        </div>
+        <nav>
+            <p>
+                <a href="index.html">home</a> /
+                <a href="instructions.html">instructions</a> /
+                <a href="cards.html">cards</a> /
+                <a href="tips.html">tips and tricks</a> /
+                <a href="history.html">history</a> /
+                <a href="quiz.html">quiz</a> /
+                <a href="explanations.html">explanations</a>
+            </p>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2><span class="orange">The</span> Cards</h2>
+            <p>
+                The original Exploding Kittens deck consists of 9 types of cards in total. This section explains the
+                function of each card if a player draws or plays it.
+            </p>
+        </section>
+        <section class="subsection1">
+            <h3 class="subsection-heading">
+                Main Cards
+            </h3>
+            <div class="flex-container cards">
+                <div>
+                    <h4 class="subsection-heading">Exploding Kitten</h4>
+                    <div class="flex-container">
+                        <img src="assets/cards/exploding-kitten.webp" alt="exploding kitten card" class="cards">
+                        <p class="textbox-beige-card">
+                            If drawn, you must show this card immediately. Use a Defuse card to neutralise… or accept defeat. You’re out.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="subsection-heading">Defuse</h4>
+                    <div class="flex-container">
+                        <img src="assets/cards/defuse.webp" alt="defuse card" class="cards">
+                        <p class="textbox-beige-card">
+                            This card can be played after drawing an Exploding Kitten card to cheat death. Place this card in the discard pile after use. Then take the Exploding Kitten card (the one you narrowly avoided) and secretly place it BACK into the DRAW pile ANYWHERE you’d like (yes, it can be on top). Do this without viewing or reordering any other cards. Your turn ends after playing this card. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subsection2">
+            <h3 class="subsection-heading">
+                Action Cards</h3>
+            <div class="grid-container cards">
+                <div class="card">
+                    <h4>Attack (2x)</h4>
+                    <img src="assets/cards/attack.webp" alt="attack (2x) card" class="cards">
+                    <p>This card immediately ends your turn without drawing, and forces the next player to take two turns in a row. That is, they’ll end up drawing 2 cards… unless they play another attack card. In this case, the turns add up: the next player will take 4 turns, or the next might take 6… This card is useful if you suspect that the next card is an Exploding Kitten.</p>
+                </div>
+                <div class="card">
+                    <h4>Shuffle</h4>
+                    <img src="assets/cards/shuffle.webp" alt="shuffle card" class="cards">
+                    <p>Shuffle the draw pile.</p>
+                </div>
+                <div class="card">
+                    <h4>Skip</h4>
+                    <img src="assets/cards/skip.webp" alt="skip card" class="cards">
+                    <p>This card immediately ends your turn without drawing a card. If this card is played in response to an attack card, it only ends 1 out of 2 turns. 2 Skip cards can be played to fully cancel an attack.</p>
+                </div>
+                <div class="card">
+                    <h4>Nope</h4>
+                    <img src="assets/cards/nope.webp" alt="nope card" class="cards">
+                    <p>This powerful card allows you to inflict the power of sheer stubbornness on your opponents. Play this to stop ANY action except for an Exploding Kitten or a Defuse card. Any card played immediately before a nope card is cancelled, and a Nope card can be played at ANY time – even if it isn’t your turn. Nope cards can also be stacked onto Nope cards to cancel the Nope.</p>
+                </div>
+                <div class="card">
+                    <h4>See the Future</h4>
+                    <img src="assets/cards/see-the-future.webp" alt="see the future card" class="cards">
+                    <p>This card allows you to sneak a peek at the top 3 cards from the Draw pile and replace them in the same order.</p>
+                </div>
+                <div class="card">
+                    <h4>Favor</h4>
+                    <img src="assets/cards/favor.webp" alt="favor card" class="cards">
+                    <p>Force a player of your choosing to give you a card from their hand. This can be any card.</p>
+                </div>
+                <div class="card large">
+                    <h4>Cat Cards</h4>
+                    <img src="assets/cards/cat-cards.webp" alt="cat cards" class="cards large">
+                    <p>These are useless alone, but as a matching pair can be played to steal a random card (blindly) from any other player. As a matching trio, any card type can be requested from another player; if they have the card, they must give it up.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Amnah | Char | Dani | Laura | Raksh | 2025</p>
+    </footer>
+</body>
+
+</html>

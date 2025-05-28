@@ -1,6 +1,301 @@
 /* GENERAL STYLES */
+html,
+body,
+nav,
+section,
+article,
+footer,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #651010;
+    --color-secondary: #48565b;
+    --color-tertiary: #5d6464;
+    --color-accent1: #485d55;
+    --color-accent2: #f4841a;
+    --color-subsection1-heading: #371f13;
+    --color-subsection1-body: #683d2a;
+    --color-subsection2-heading: #394040;
+    --color-subsection2-body: #a2a8ab;
+    --color-textbox: #c6aa9e;
+    --color-card: #e7e2de;
+    --color-card-text: #c5b6b2;
+}
+
+html,
+body {
+    background-color: var(--color-tertiary);
+    font-family: "Figtree", Verdana, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: var(--color-primary);
+    padding: 10px;
+}
+
+h1,
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+h3,
+h4 {
+    font-family: "Alegreya", serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40pt;
+}
+
+h3 {
+    font-size: 30pt;
+}
+
+h4 {
+    font-size: 20pt;
+}
+
+p {
+    font-size: 16pt;
+}
+
+label,
+input {
+    display: block;
+}
+
+a {
+    color: var(--color-primary);
+}
+
 /* UTILITIES */
+/* containers */
+.flex-container {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+}
+
+/* card styling */
+.card {
+    grid-column: span 1;
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: column;
+}
+
+.card.large {
+    grid-column: span 2;
+}
+
+.card h4,
+.card img {
+    flex: 1 0 0;
+    padding: 20px;
+}
+
+.card p {
+    flex: 1 0 0;
+    background-color: var(--color-card-text);
+    padding: 20px;
+}
+
+.card2 {
+    grid-column: span 1;
+    background-color: var(--color-subsection2-body);
+    display: flex;
+    flex-direction: column;
+}
+
+.card2 img {
+    flex: 1 0 0;
+    padding: 20px;
+    width: 500px;
+}
+
+.card2 {
+    flex: 1 0 0;
+    padding: 20px;
+}
+
+/* other */
+.textbox-beige-card {
+    background-color: var(--color-textbox);
+    margin: 20px 20px;
+    padding: 20px;
+    width: 465px;
+}
+
+.textbox-beige-subsection {
+    background-color: var(--color-textbox);
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.orange {
+    color: var(--color-accent2);
+}
+
 /* SITEWIDE */
+.header {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+nav p,
+nav a {
+    color: #000000;
+}
+
+section p {
+    padding: 20px 0;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
 /* PAGE SPECIFIC - HOMEPAGE */
+/* PAGE SPECIFIC - CARDS */
+img.cards {
+    align-self: center;
+    width: 250px;
+    margin: 20px 0;
+}
+
+img.cards.large {
+    width: 1000px;
+}
+
+.flex-container.cards {
+    padding: 20px 20px;
+}
+
+.grid-container.cards {
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+    padding: 40px;
+}
+
+/* subsection styling */
+.subsection1 {
+    background-color: var(--color-subsection1-body);
+}
+
+.subsection2 {
+    background-color: var(--color-subsection2-body);
+}
+
+.subsection3 {
+    background-color: #c5b6b2;
+    padding: 20px;
+}
+
+.subsection-heading {
+    color: #ffffff;
+    text-align: center;
+}
+
+.subsection-heading-lrg {
+    font-size: 30pt;
+    text-align: center;
+}
+
+.subsection1 h3 {
+    background-color: var(--color-subsection1-heading);
+    padding: 10px 20px;
+}
+
+.subsection2 h3 {
+    background-color: var(--color-subsection2-heading);
+    padding: 10px 20px;
+}
+
+.subsection3 h4 {
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap p {
+    margin: 20px;
+    padding: 20px;
+}
+
+.wrap img {
+    width: 300px;
+}
+
+/* PAGE SPECIFIC - HISTORY */
+.timeline {
+    background-color: var(--color-subsection2-body);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px;
+}
+
+.timeline-item {
+    display: inline-block;
+}
+
+.timeline-content {
+    width: 640px;
+    white-space: normal;
+    padding: 20px;
+}
+
+.timeline-image {
+    width: 640px;
+    padding: 20px;
+}
+
 /* PAGE SPECIFIC - QUIZ */
 /* PAGE SPECIFIC - EXPLANATIONS */
