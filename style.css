@@ -274,7 +274,7 @@ img.cards.large {
 }
 
 .quiz-feedback-container:not(:empty) {
-    background-color: var(--color-subsection-body);
+    background-color: var(--color-subsection-heading);
     padding: 20px;
 }
 
