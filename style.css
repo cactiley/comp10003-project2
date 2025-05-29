@@ -30,7 +30,8 @@ ol {
 }
 
 html,
-body {  /* changed from color tertiary */
+body {
+    /* changed from color tertiary */
     background-color: #101f22;
     font-family: "Figtree", Verdana, sans-serif;
     overscroll-behavior: none;
@@ -86,7 +87,8 @@ h4 {
     font-size: 20pt;
 }
 
-p {
+p,
+label {
     font-size: 16pt;
 }
 
@@ -104,7 +106,8 @@ a {
     display: grid;
 }
 
-.image-overlay { /* can this be wider? */
+.image-overlay {
+    /* can this be wider? */
     position: relative;
     text-align: center;
     color: white;
@@ -254,9 +257,48 @@ img.cards.large {
 }
 
 /* PAGE SPECIFIC - QUIZ */
-.question>label,
-.question>input {
+#quiz {
+    text-align: right;
+}
+
+.quiz-question {
+    text-align: left;
+    background-color: #cccccc;
+    margin: 0 0 20px 0;
+}
+
+.quiz-inputs {
+    background-color: #777777;
+    padding: 20px;
+}
+
+.quiz-feedback-container:not(:empty) {
+    background-color: #555555;
+    padding: 20px;
+}
+
+.quiz-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    padding: 20px;
+    color: #ffffff;
+    font-size: 16pt;
+    justify-self: right;
+    border: none;
+}
+
+span.hidden-text {
+    color: #555555;
+}
+
+.quiz-question>label {
     display: block;
+    padding: 20px;
+}
+
+.quiz-option>label {
+    display: inline-block;
+    margin: 5px;
 }
 
 /* PAGE SPECIFIC - EXPLANATIONS */
