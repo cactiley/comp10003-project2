@@ -30,8 +30,8 @@ ol {
 }
 
 html,
-body {
-    background-color: var(--color-tertiary);
+body {  /* changed from color tertiary */
+    background-color: #101f22;
     font-family: "Figtree", Verdana, sans-serif;
     overscroll-behavior: none;
 }
@@ -103,6 +103,20 @@ a {
 .grid-container {
     display: grid;
 }
+
+.image-overlay { /* can this be wider? */
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* card styling */
 .card {
