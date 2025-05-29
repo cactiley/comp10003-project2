@@ -14,6 +14,7 @@ ul,
 ol {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -24,9 +25,6 @@ ol {
     --color-accent2: #f4841a;
     --color-subsection1-heading: #371f13;
     --color-subsection1-body: #683d2a;
-    --color-subsection2-heading: #394040;
-    --color-subsection2-body: #a2a8ab;
-    --color-textbox: #c6aa9e;
     --color-card: #e7e2de;
     --color-card-text: #c5b6b2;
 }
@@ -35,6 +33,7 @@ html,
 body {
     background-color: var(--color-tertiary);
     font-family: "Figtree", Verdana, sans-serif;
+    overscroll-behavior: none;
 }
 
 main {
@@ -91,11 +90,6 @@ p {
     font-size: 16pt;
 }
 
-label,
-input {
-    display: block;
-}
-
 a {
     color: var(--color-primary);
 }
@@ -124,7 +118,7 @@ a {
 
 .card h4,
 .card img {
-    flex: 1 0 0;
+    flex: 0 0 0;
     padding: 20px;
 }
 
@@ -134,40 +128,34 @@ a {
     padding: 20px;
 }
 
-.card2 {
-    grid-column: span 1;
-    background-color: var(--color-subsection2-body);
-    display: flex;
-    flex-direction: column;
+/* subsections */
+.subsection {
+    background-color: #999999;
 }
 
-.card2 img {
-    flex: 1 0 0;
+.subsection-heading {
+    background-color: #555555;
     padding: 20px;
-    width: 500px;
+    text-align: center;
 }
 
-.card2 {
-    flex: 1 0 0;
+.subsection-content {
+    padding: 20px;
+}
+
+/* textboxes */
+.textbox {
+    background-color: #777777;
     padding: 20px;
 }
 
 /* other */
-.textbox-beige-card {
-    background-color: var(--color-textbox);
-    margin: 20px 20px;
-    padding: 20px;
-    width: 465px;
-}
-
-.textbox-beige-subsection {
-    background-color: var(--color-textbox);
-    margin: 20px 20px;
-    padding: 20px;
-}
-
 .bold {
     font-weight: 700;
+}
+
+.center {
+    text-align: center;
 }
 
 .orange {
@@ -189,10 +177,6 @@ nav a {
     color: #000000;
 }
 
-section p {
-    padding: 20px 0;
-}
-
 .banner {
     width: 100%;
     display: block;
@@ -203,7 +187,7 @@ section p {
 img.cards {
     align-self: center;
     width: 250px;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 img.cards.large {
@@ -211,67 +195,25 @@ img.cards.large {
 }
 
 .flex-container.cards {
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .grid-container.cards {
     grid-template-columns: repeat(2, auto);
     gap: 40px;
-    padding: 40px;
-}
-
-/* subsection styling */
-.subsection1 {
-    background-color: var(--color-subsection1-body);
-}
-
-.subsection2 {
-    background-color: var(--color-subsection2-body);
-}
-
-.subsection3 {
-    background-color: #c5b6b2;
     padding: 20px;
 }
 
-.subsection-heading {
-    color: #ffffff;
-    text-align: center;
+/* PAGE SPECIFIC - TIPS & TRICKS */
+.grid-container.tips {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    box-sizing: content-box;
 }
 
-.subsection-heading-lrg {
-    font-size: 30pt;
-    text-align: center;
-}
-
-.subsection1 h3 {
-    background-color: var(--color-subsection1-heading);
-    padding: 10px 20px;
-}
-
-.subsection2 h3 {
-    background-color: var(--color-subsection2-heading);
-    padding: 10px 20px;
-}
-
-.subsection3 h4 {
-    color: #000000;
-    padding: 10px 20px;
-}
-
-.wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrap p {
-    margin: 20px;
-    padding: 20px;
-}
-
-.wrap img {
-    width: 300px;
+.grid-large {
+    grid-row: span 2;
 }
 
 /* PAGE SPECIFIC - HISTORY */
@@ -298,4 +240,9 @@ img.cards.large {
 }
 
 /* PAGE SPECIFIC - QUIZ */
+.question>label,
+.question>input {
+    display: block;
+}
+
 /* PAGE SPECIFIC - EXPLANATIONS */
