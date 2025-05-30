@@ -26,12 +26,14 @@ ol {
     --color-light-blue-gray: #a1a8ab;
     --color-dark-blue-gray: #364040;
     --color-beige: #f0e1d2;
+    --color-dark-beige: #b79985;
+    --color-brown: #794934;
+    --color-dark-brown: #3d1b0c;
     --color-orange: #f4841a;
 }
 
 html,
 body {
-    /* changed from color tertiary */
     background-color: var(--color-blue-gray);
     font-family: "Figtree", Verdana, sans-serif;
     overscroll-behavior: none;
@@ -130,10 +132,18 @@ figcaption {
 }
 
 .image-overlay {
-    /* can this be wider? */
     position: relative;
     text-align: center;
     color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
 }
 
 .text-image-overlay {
@@ -141,7 +151,11 @@ figcaption {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
+
 
 
 /* card styling */
@@ -149,6 +163,7 @@ figcaption {
     grid-column: span 1;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-beige);
 }
 
 .card.large {
@@ -165,6 +180,7 @@ figcaption {
 .card p {
     flex: 1 0 0;
     padding: 20px;
+    background-color: var(--color-dark-beige);
 }
 
 .subsection {
@@ -214,6 +230,19 @@ figcaption {
     background-color: var(--color-beige);
 }
 
+.dark-beige {
+    background-color: var(--color-dark-beige);
+}
+
+.brown {
+    background-color: var(--color-brown);
+}
+
+.dark-brown {
+    background-color: var(--color-dark-brown);
+}
+
+
 /* other */
 .bold {
     font-weight: 700;
@@ -245,7 +274,6 @@ figcaption {
 img.text {
     align-self: center;
     width: 250px;
-    margin: 20px;
 }
 
 /* PAGE SPECIFIC - HOMEPAGE */
@@ -268,7 +296,12 @@ img.text {
 }
 
 /* PAGE SPECIFIC - CARDS */
-img.text.large {
+img.cards {
+    align-self: center;
+    width: 250px;
+}
+
+img.cards.large {
     width: 1000px;
 }
 
@@ -280,6 +313,14 @@ img.text.large {
     grid-template-columns: repeat(2, auto);
     gap: 40px;
     padding: 20px;
+}
+
+.horizontal-card-container {
+    flex: 1 1 0;
+}
+
+.horizontal-margin {
+    margin: 0 20px;
 }
 
 /* PAGE SPECIFIC - TIPS & TRICKS */
