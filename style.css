@@ -24,6 +24,7 @@ ol {
     --color-blue-gray: #5b6464;
     --color-lighter-blue-gray: #cdd5d8;
     --color-light-blue-gray: #a1a8ab;
+    --color-medium-blue-gray: #62717d;
     --color-dark-blue-gray: #364040;
     --color-beige: #f0e1d2;
     --color-dark-beige: #b79985;
@@ -174,7 +175,7 @@ figcaption {
 .card img {
     flex: 0 0 0;
     padding: 20px;
-    color: #000000;
+    color: black;
 }
 
 .card p {
@@ -274,6 +275,7 @@ figcaption {
 img.text {
     align-self: center;
     width: 250px;
+    margin: 20px;
 }
 
 /* PAGE SPECIFIC - HOMEPAGE */
@@ -285,6 +287,10 @@ img.text {
 
 .light-blue-gray h4.dark-blue-gray {
     color: white;
+}
+
+.instructions.card p {
+    background-color: var(--color-medium-blue-gray);
 }
 
 .vertical-margin {
@@ -381,32 +387,40 @@ img.cards.large {
 
 .quiz-question {
     text-align: left;
-    background-color: var(--color-accent3);
+    background-color: var(--color-lighter-blue-gray);
     margin: 0 0 20px 0;
 }
 
 .quiz-inputs {
-    background-color: var(--color-accent1);
+    background-color: var(--color-medium-blue-gray);
     padding: 20px;
 }
 
 .quiz-feedback-container:not(:empty) {
-    background-color: var(--color-subsection-heading);
+    background-color: var(--color-dark-blue-gray);
+    color: white;
     padding: 20px;
+
 }
 
 .quiz-button {
     display: inline-block;
     background-color: var(--color-red);
     padding: 20px;
-    color: #ffffff;
+    color: white;
     font-size: 16pt;
     justify-self: right;
     border: none;
 }
 
 span.hidden-text {
-    color: var(--color-subsection-body);
+    color: var(--color-dark-blue-gray);
+}
+
+img.quiz {
+    width: 250px;
+    margin: auto;
+    display: block;
 }
 
 .quiz-question>label {
