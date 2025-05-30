@@ -147,7 +147,6 @@ figcaption {
 /* card styling */
 .card {
     grid-column: span 1;
-    background-color: var(--color-card);
     display: flex;
     flex-direction: column;
 }
@@ -165,7 +164,6 @@ figcaption {
 
 .card p {
     flex: 1 0 0;
-    background-color: var(--color-card-text);
     padding: 20px;
 }
 
@@ -229,6 +227,10 @@ figcaption {
     color: var(--color-orange);
 }
 
+.white {
+    color: white;
+}
+
 /* SITEWIDE */
 .header {
     background-color: var(--color-red);
@@ -247,6 +249,24 @@ img.text {
 }
 
 /* PAGE SPECIFIC - HOMEPAGE */
+
+/* PAGE SPECIFIC - INSTRUCTIONS */
+.light-blue-gray h4 {
+    color: black;
+}
+
+.light-blue-gray h4.dark-blue-gray {
+    color: white;
+}
+
+.vertical-margin {
+    margin: 20px 0;
+}
+
+.bottom-margin {
+    margin: 0 0 20px 0;
+}
+
 /* PAGE SPECIFIC - CARDS */
 img.text.large {
     width: 1000px;
