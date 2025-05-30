@@ -18,16 +18,16 @@ ol {
 }
 
 :root {
-    --color-primary: #651010;
-    --color-secondary: #48565b;
-    --color-tertiary: #5d6464;
-    --color-accent1: #485d55;
-    --color-accent2: #f4841a;
-    --color-accent3: #777777;
-    --color-subsection-heading: #555555;
-    --color-subsection-body: #999999;
-    --color-card: #e7e2de;
-    --color-card-text: #c5b6b2;
+    --color-primary: #651010; /* */
+    --color-secondary: #2d3d3d; /* */
+    --color-tertiary: #5d6464; /* */
+    --color-accent1: #5f7779; /* #9cadaf #485d55  */
+    --color-accent2: #f4841a; /* */
+    --color-accent3: #aabbbd; /* */
+    --color-subsection-heading: #24393d; /* #591c14 #24393d */
+    --color-subsection-body: #7a8b8b; /* #718282 #c8a49a #7a8b8b */
+    --color-card: #cdd3d6; /* #e7e2de #cdd3d6 */
+    --color-card-text: #a2b6b8; /* #c5b6b2 #a2b6b8 */
 }
 
 html,
@@ -69,6 +69,7 @@ h3,
 h4 {
     font-family: "Alegreya", serif;
     font-weight: 600;
+    color: #ffffff;
 }
 
 h1 {
@@ -145,6 +146,7 @@ figcaption {
 .card img {
     flex: 0 0 0;
     padding: 20px;
+    color: #000000;
 }
 
 .card p {
@@ -271,12 +273,12 @@ img.cards.large {
 
 .quiz-question {
     text-align: left;
-    background-color: #cccccc;
+    background-color: var(--color-accent3);
     margin: 0 0 20px 0;
 }
 
 .quiz-inputs {
-    background-color: var(--color-accent3);
+    background-color: var(--color-accent1);
     padding: 20px;
 }
 
