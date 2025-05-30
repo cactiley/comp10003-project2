@@ -106,10 +106,15 @@ footer p {
     color: white;
 }
 
+figure {
+    flex: 1 0 0;
+}
+
 figcaption {
     font-size: 10pt;
     font-weight: 300;
     text-align: center;
+    white-space: normal;
 }
 
 
@@ -251,6 +256,10 @@ figcaption {
 
 .center {
     text-align: center;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .orange {
