@@ -304,25 +304,33 @@ img.text.large {
 
 /* PAGE SPECIFIC - HISTORY */
 .timeline {
-    background-color: var(--color-subsection-body);
+    background-color: var(--color-light-blue-gray);
     overflow: auto;
     white-space: nowrap;
     padding: 20px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .timeline-item {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+.timeline-image {
+    width: 640px;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 .timeline-content {
     width: 640px;
     white-space: normal;
     padding: 20px;
-}
-
-.timeline-image {
-    width: 640px;
-    padding: 20px;
+    flex-grow: 1;
 }
 
 /* PAGE SPECIFIC - QUIZ */
