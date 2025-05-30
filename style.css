@@ -22,6 +22,7 @@ ol {
     --color-light-red: #d1a69a;
     --color-dark-red: #3a130e;
     --color-blue-gray: #5b6464;
+    --color-lighter-blue-gray: #cdd5d8;
     --color-light-blue-gray: #a1a8ab;
     --color-dark-blue-gray: #364040;
     --color-beige: #f0e1d2;
@@ -119,6 +120,15 @@ figcaption {
     display: grid;
 }
 
+/* flex container modifiers */
+.center-align {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
 .image-overlay {
     /* can this be wider? */
     position: relative;
@@ -188,6 +198,10 @@ figcaption {
 
 .blue-gray {
     background-color: var(--color-blue-gray);
+}
+
+.lighter-blue-gray {
+    background-color: var(--color-lighter-blue-gray);
 }
 
 .light-blue-gray {
@@ -260,8 +274,12 @@ img.text.large {
     grid-row: span 2;
 }
 
-.light-blue-gray h4 {
+.lighter-blue-gray h4 {
     color: black;
+}
+
+.tips-card {
+    width: calc(50% - 20px);
 }
 
 /* PAGE SPECIFIC - HISTORY */
