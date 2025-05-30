@@ -147,7 +147,6 @@ figcaption {
 /* card styling */
 .card {
     grid-column: span 1;
-    background-color: var(--color-card);
     display: flex;
     flex-direction: column;
 }
@@ -165,7 +164,6 @@ figcaption {
 
 .card p {
     flex: 1 0 0;
-    background-color: var(--color-card-text);
     padding: 20px;
 }
 
@@ -229,6 +227,10 @@ figcaption {
     color: var(--color-orange);
 }
 
+.white {
+    color: white;
+}
+
 /* SITEWIDE */
 .header {
     background-color: var(--color-red);
@@ -248,6 +250,24 @@ img.text {
 }
 
 /* PAGE SPECIFIC - HOMEPAGE */
+
+/* PAGE SPECIFIC - INSTRUCTIONS */
+.light-blue-gray h4 {
+    color: black;
+}
+
+.light-blue-gray h4.dark-blue-gray {
+    color: white;
+}
+
+.vertical-margin {
+    margin: 20px 0;
+}
+
+.bottom-margin {
+    margin: 0 0 20px 0;
+}
+
 /* PAGE SPECIFIC - CARDS */
 img.text.large {
     width: 1000px;
@@ -285,25 +305,33 @@ img.text.large {
 
 /* PAGE SPECIFIC - HISTORY */
 .timeline {
-    background-color: var(--color-subsection-body);
+    background-color: var(--color-light-blue-gray);
     overflow: auto;
     white-space: nowrap;
     padding: 20px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .timeline-item {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+}
+
+.timeline-image {
+    width: 640px;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 .timeline-content {
     width: 640px;
     white-space: normal;
     padding: 20px;
-}
-
-.timeline-image {
-    width: 640px;
-    padding: 20px;
+    flex-grow: 1;
 }
 
 /* PAGE SPECIFIC - QUIZ */
