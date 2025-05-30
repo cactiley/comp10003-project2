@@ -97,6 +97,13 @@ a {
     color: var(--color-primary);
 }
 
+figcaption {
+    font-size: 10pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+
 /* UTILITIES */
 /* containers */
 .flex-container {
