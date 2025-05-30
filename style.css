@@ -18,22 +18,20 @@ ol {
 }
 
 :root {
-    --color-primary: #651010; /* */
-    --color-secondary: #2d3d3d; /* */
-    --color-tertiary: #5d6464; /* */
-    --color-accent1: #5f7779; /* #9cadaf #485d55  */
-    --color-accent2: #f4841a; /* */
-    --color-accent3: #aabbbd; /* */
-    --color-subsection-heading: #24393d; /* #591c14 #24393d */
-    --color-subsection-body: #7a8b8b; /* #718282 #c8a49a #7a8b8b */
-    --color-card: #cdd3d6; /* #e7e2de #cdd3d6 */
-    --color-card-text: #a2b6b8; /* #c5b6b2 #a2b6b8 */
+    --color-red: #591C14;
+    --color-light-red: #d1a69a;
+    --color-dark-red: #3a130e;
+    --color-blue-gray: #5b6464;
+    --color-light-blue-gray: #a1a8ab;
+    --color-dark-blue-gray: #364040;
+    --color-beige: #f0e1d2;
+    --color-orange: #f4841a;
 }
 
 html,
 body {
     /* changed from color tertiary */
-    background-color: #101f22;
+    background-color: var(--color-blue-gray);
     font-family: "Figtree", Verdana, sans-serif;
     overscroll-behavior: none;
 }
@@ -43,7 +41,7 @@ main {
 }
 
 nav {
-    background-color: var(--color-secondary);
+    background-color: var(--color-dark-red);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -54,7 +52,7 @@ section {
 }
 
 footer {
-    background-color: var(--color-primary);
+    background-color: var(--color-dark-red);
     padding: 10px;
 }
 
@@ -62,14 +60,14 @@ h1,
 h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: white;
 }
 
 h3,
 h4 {
     font-family: "Alegreya", serif;
     font-weight: 600;
-    color: #ffffff;
+    color: white;
 }
 
 h1 {
@@ -95,7 +93,13 @@ label {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-red);
+}
+
+nav p,
+nav a,
+footer p {
+    color: white;
 }
 
 figcaption {
@@ -155,13 +159,11 @@ figcaption {
     padding: 20px;
 }
 
-/* subsections */
 .subsection {
     background-color: var(--color-subsection-body);
 }
 
-.subsection-heading {
-    background-color: var(--color-subsection-heading);
+.separated-heading {
     padding: 20px;
     text-align: center;
 }
@@ -170,10 +172,34 @@ figcaption {
     padding: 20px;
 }
 
-/* textboxes */
-.textbox {
-    background-color: var(--color-accent3);
-    padding: 20px;
+/* background coloring */
+.red {
+    background-color: var(--color-red);
+}
+
+.light-red {
+    background-color: var(--color-light-red);
+}
+
+.dark-red {
+    background-color: var(--color-dark-red);
+    color: white;
+}
+
+.blue-gray {
+    background-color: var(--color-blue-gray);
+}
+
+.light-blue-gray {
+    background-color: var(--color-light-blue-gray);
+}
+
+.dark-blue-gray {
+    background-color: var(--color-dark-blue-gray);
+}
+
+.beige {
+    background-color: var(--color-beige);
 }
 
 /* other */
@@ -186,22 +212,13 @@ figcaption {
 }
 
 .orange {
-    color: var(--color-accent2);
+    color: var(--color-orange);
 }
 
 /* SITEWIDE */
 .header {
-    background-color: var(--color-primary);
+    background-color: var(--color-red);
     padding: 20px;
-}
-
-footer p {
-    color: #ffffff;
-}
-
-nav p,
-nav a {
-    color: #000000;
 }
 
 .banner {
@@ -209,15 +226,15 @@ nav a {
     display: block;
 }
 
-/* PAGE SPECIFIC - HOMEPAGE */
-/* PAGE SPECIFIC - CARDS */
-img.cards {
+img.text {
     align-self: center;
     width: 250px;
     margin: 20px;
 }
 
-img.cards.large {
+/* PAGE SPECIFIC - HOMEPAGE */
+/* PAGE SPECIFIC - CARDS */
+img.text.large {
     width: 1000px;
 }
 
@@ -241,6 +258,10 @@ img.cards.large {
 
 .grid-large {
     grid-row: span 2;
+}
+
+.light-blue-gray h4 {
+    color: black;
 }
 
 /* PAGE SPECIFIC - HISTORY */
@@ -289,7 +310,7 @@ img.cards.large {
 
 .quiz-button {
     display: inline-block;
-    background-color: var(--color-primary);
+    background-color: var(--color-red);
     padding: 20px;
     color: #ffffff;
     font-size: 16pt;
