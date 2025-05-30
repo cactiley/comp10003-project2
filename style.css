@@ -243,7 +243,8 @@ figcaption {
 img.text {
     align-self: center;
     width: 250px;
-    margin: 20px;
+    margin: auto;
+    display: block;
 }
 
 /* PAGE SPECIFIC - HOMEPAGE */
